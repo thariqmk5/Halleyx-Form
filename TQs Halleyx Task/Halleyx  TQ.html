@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page Designer</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <div id="toolbox">
+        <img src="hxlogo.png" class="hxlogo" height="50" width="100">
+        <div class="toolbox-iteml" data-type="form Designer">Form Designer</div>
+        <br>
+        <div class="box">
+        <img src="layicon.png" width="50px" height="50px" class="layicon">
+        <div class="toolbox-item" draggable="true" ondragstart="drag(event)">Layout</div>
+        </div>
+        <div class="box">
+        <img src="t-box.png" width="30px" height="30px" class="label">
+        <div class="toolbox-item" draggable="true" ondragstart="drag(event)">Label</div>
+        </div>
+        <div class="box">
+        <img src="button.png" width="30px" height="30px" class="btn">
+        <div class="toolbox-item" draggable="true" ondragstart="drag(event)">Button</div>
+        </div>
+        <div class="box">
+        <img src="textbox.png" width="30px" height="30px" class="text">
+        <div class="toolbox-item" draggable="true" ondragstart="drag(event)">Text Box</div>
+        </div>
+        <div class="box">
+        <img src="arrow-drop-down.png" width="50px" height="50px" class="drop">
+        <div class="toolbox-item" draggable="true" ondragstart="drag(event)">Dropdown</div>
+        </div>
+        <div class="box">
+        <img src="check-box.png" width="30px" height="30px" class="check">
+        <div class="toolbox-item" draggable="true" ondragstart="drag(event)">Check Box</div>
+        </div>
+        <div class="box">
+        <img src="radio-button.png" width="30px" height="30px" class="radio">
+        <div class="toolbox-item" draggable="true" ondragstart="drag(event)">Radio Button</div>
+        </div>
+        <div class="box">
+        <img src="table.png" width="30px" height="30px" class="table">
+        <div class="toolbox-item" draggable="true" ondragstart="drag(event)">Table</div>
+        </div>
+        <div class="box">
+        <img src="navigation 1.png" width="30px" height="30px" class="navi">
+        <div class="toolbox-item" draggable="true" ondragstart="drag(event)">Navigation Link</div>
+        </div>
+        <div class="box">
+        <img src="image.png" width="30px" height="30px" class="image">
+        <div class="toolbox-item" draggable="true" ondragstart="drag(event)">Image</div>
+        </div>
+        
+    </div>
+    <div class="content">
+        <div class="top">
+            <div class="button-container">
+                <div class="top_content">
+                    <h4 class="top_content_heading">Design mode</h4>
+                    <div class="button_click">
+                        <button class="button_one" onclick="openPreview()">Preview</button>
+                        <button class="button_two"  onclick="alert('Hey buddy! are you sure to Publish')">Publish</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="canvas" ondrop="drop(event)" ondragover="allowDrop(event)">
+            
+        </div>
+    </div>
+    
+</body>
+</html>
+
+

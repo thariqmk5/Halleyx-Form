@@ -1,0 +1,284 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  -background-image: url("bodybgd.png");
+
+}
+
+#toolbox {
+    background-image: linear-gradient(#3b3b3b,#18203d);
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+}
+
+#canvas {
+    margin-top: 3%;
+    margin-left: 200px;
+    padding: 20px;
+    min-height: 700px;
+}
+.layout_form{
+    margin-top: 3%;
+    margin-left: 20px;
+    padding: 20px;
+    min-height: 500px;
+    min-width:900px;
+    border: 2px  black solid;
+
+
+}
+.toolbox-iteml {
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 30px;
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.toolbox-item {
+    resize: none;
+    width: 200px;
+    margin-bottom: 5px;
+    margin-left: 50px;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 30px;
+    color: gray;
+    transition: 0.8s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.box:hover .toolbox-item{
+    color: white;
+}
+.box{
+    background: orangered;
+    padding: 5px;
+    width: 1%;
+    height: 6%;
+    transition: 0.7s;
+}
+.box:hover{
+    transform: scale(1.1);
+    width: 90%;
+    border-radius: 5px;
+    margin: 10px;
+}
+.box:hover img{
+    filter: invert(100%);
+}
+.button-container {
+    top: 0;
+    padding: 10px;
+    height: 50px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+}
+.top_content{
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+.button_click{
+    position: fixed;
+    right: 0%;
+    margin-right: 50px;
+
+}
+.top_content_heading{
+    position:relative;
+    top: 0%;
+    left:10%;
+    padding: 10px;
+    border-radius: 5px;
+    background-image: linear-gradient(orange,darkorange);
+    margin-left: 150px;
+}
+.button_one{
+    position: relative;
+    margin-right: 40px;
+    width: 90px;
+    height: 35px;
+    color:white;
+    border: none;
+    background: orange;
+    border:0px;
+    font-size: small;
+    cursor: pointer;
+    transition: 0.7s;
+    transform: scale(1.0);
+    border-radius: 5px;
+}
+.button_one:hover{
+    transform: scale(1.1);
+}
+.button_one:active{
+    transform: scale(0.9);
+    background: darkorange;
+
+}
+.button_two:hover{
+    transform: scale(1.1);
+}
+.button_two:active{
+    transform: scale(0.9);
+    background: darkorange;
+
+}
+.button_two{
+    position: relative;
+    width: 90px;
+    height: 35px;
+    color:white;
+    border: none;
+    background: limegreen;
+    border:0px;
+    font-size: small;
+    cursor: pointer;
+    transition: 0.7s;
+    transform: scale(1.0);
+    border-radius: 5px;
+
+}
+.button_click_last{
+    position: fixed;
+    right: 0%;
+    bottom:10%;
+    margin-right: 50px;
+  
+
+}
+
+td{
+    height: 50px;
+    width: 250px;
+    border: 1px black solid;
+}
+.table_menu{
+    height:50px;
+    width:250px;
+}
+.file{
+    padding-top:15px;
+
+}       
+.checkbox_button  {
+    display: flex;
+    align-items: center;
+    }
+
+.checkbox_button  label {
+    margin-right: 10px; 
+    }
+.choose{
+    margin:20PX;
+}
+.Table_button{
+    display: flex;
+    flex-direction: row;
+}
+p{
+    margin-right: 75px;
+}
+.name{
+    height: 40px;
+    width: 500px;
+}
+
+
+.preview{
+    margin-top:50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-bottom: 100px;
+    width: 700px;
+    height:100vh ;
+}
+
+.label{
+    position: absolute;
+    filter: invert(50%);
+    margin-top: -5px;
+    transition: 0.8s;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+.layicon{
+    position: absolute;
+    filter: invert(50%);
+    margin-top: -5px;
+    transition: 0.8s;
+}
+.btn{
+    position: absolute;
+    filter: invert(50%);
+    margin-top: -5px;
+    transition: 0.8s;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+.text{
+    position: absolute;
+    filter: invert(50%);
+    margin-top: -5px;
+    transition: 0.8s;
+    margin-left: 10px;
+     margin-top: 3px;
+}
+.drop{
+    position: absolute;
+    filter: invert(50%);
+    margin-top: -5px;
+    transition: 0.8s;
+}
+.check{
+    position: absolute;
+    filter: invert(50%);
+    margin-top: -5px;
+    transition: 0.8s;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+.radio{
+    position: absolute;
+    filter: invert(50%);
+    margin-top: -5px;
+    transition: 0.8s;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+.table{
+    position: absolute;
+    filter: invert(50%);
+    margin-top: -5px;
+    transition: 0.8s;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+.navi{
+    position: absolute;
+    filter: invert(50%);
+    margin-top: -5px;
+    transition: 0.8s;
+    margin-left: 10px;
+     margin-top: 3px;
+}
+.image{
+    position: absolute;
+    filter: invert(50%);
+    margin-top: -5px;
+    transition: 0.8s;
+    margin-left: 10px;
+     margin-top: 3px;
+}
+img{
+    cursor: pointer;
+}
